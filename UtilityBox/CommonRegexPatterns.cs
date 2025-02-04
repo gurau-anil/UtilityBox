@@ -13,7 +13,14 @@ namespace UtilityBox
         public const string IPv4Address = @"^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$";
         public const string IPv6Address = @"^([0-9a-fA-F]{1,4}:){7}([0-9a-fA-F]{1,4})$";
         public const string USZipCode = @"^\d{5}(-\d{4})?$";
-        
+        public const string Alphanumeric = @"^[a-zA-Z0-9]+$";
+        public const string StrongPassword = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$";
+        public const string Base64 = @"^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$";
+        public const string LettersOnly = @"^[a-zA-Z]+$";
+        public const string DigitsOnly = @"^\d+$";
+        public const string AlphaNumericWithSpecialChars = @"^[a-zA-Z0-9\s\-_@]+$";
+        public const string LatitudeLongitude = @"^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?)\s*,\s*[-+]?((1[0-7]\d(\.\d+)?)|180(\.0+)?|\d(\.\d+)?)$";
+        public const string CurrencyAmount = @"^\$?(\d{1,3})(,\d{3})*(\.\d{2})?$";
 
     }
 }
