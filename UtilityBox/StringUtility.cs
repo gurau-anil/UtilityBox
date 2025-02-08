@@ -61,10 +61,7 @@ namespace UtilityBox.StringUtils
             return new string(password.ToString().OrderBy(c => random.Next()).ToArray());
         }
 
-        public static string GenerateUniqueIdentifier()
-        {
-            return Guid.NewGuid().ToString();
-        }
+        
     }
 
 
